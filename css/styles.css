@@ -236,7 +236,7 @@ ul {
 
 .activity-title-item {
   margin-left: 30px;
-  flex-basis: ((100% - 3 * 30px) / 3);
+  width: calc((100% - 3 * 30px) / 3);
 }
 
 /* ---------------command-------------- */
@@ -261,7 +261,8 @@ ul {
 }
 
 .command-list-item {
-  width: 270px;
+  /* width: 270px; */
+  flex-basis: calc (100% / 4 - 30px);
   height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -303,16 +304,26 @@ ul {
 
 /* ----------------btn-------------- */
 
+.filters-button-list .item + .item {
+  margin-left: 8px;
+}
 .btn {
+  height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  padding-left: 22px;
+  padding-right: 22px;
   letter-spacing: 0.03em;
+  min-width: 73px;
   color: var(--main-title-color);
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 .btn:hover,
@@ -329,7 +340,26 @@ ul {
 
 /* ---------portfolio--------- */
 
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filters-button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: -30px;
+}
+
 .portfolio-title {
+  margin-left: 24px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -337,7 +367,19 @@ ul {
   color: var(--main-title-color);
 }
 
+.portfolio-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
 .portfolio-list-item > .portfolio-link {
+  display: block;
+  margin-left: 24px;
+  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -347,7 +389,9 @@ ul {
 
 /* -------------footer----------------- */
 
-.footer .footer-address {
+/* ----------Почему не работает color ????------------- */
+
+.footer-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -384,10 +428,4 @@ ul {
 
 .footer-contacts .item + .item {
   margin-top: 9px;
-}
-
-/* ----------Почему не работает????------------- */
-.footer-address:visited {
-  text-decoration: none;
-  color: inherit;
 }

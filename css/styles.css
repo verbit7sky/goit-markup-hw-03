@@ -20,6 +20,10 @@ h6 {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -133,8 +137,9 @@ ul {
 /* ---------hero------------ */
 
 .hero-button {
-  display: inline-block;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -154,17 +159,16 @@ ul {
   background-color: #188ce8;
 }
 .hero {
-  border-top: 1px solid transparent;
   text-align: center;
-  width: 100%;
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: #2f303a;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-title {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -218,10 +222,11 @@ ul {
 /* ------------------activity---------------------- */
 
 .activity {
-  height: 480px;
+  /* height: 480px; */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 94px;
 }
 
 .activity-title {
@@ -348,18 +353,19 @@ ul {
 .filters-button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: -30px;
   margin-left: -30px;
 }
 
 .portfolio-title {
-  margin-left: 24px;
-  margin-top: 20px;
+  /* margin-left: 24px;
+  margin-top: 20px; */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -373,13 +379,21 @@ ul {
   width: 370px;
   height: 404px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
+}
+
+.portfolio-item-caption {
+  padding: 20px 24px;
+  height: 110px;
+  border-color: #eeeeee;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
 }
 
 .portfolio-list-item > .portfolio-link {
   display: block;
-  margin-left: 24px;
-  margin-top: 4px;
+  /* margin-left: 24px;
+  margin-top: 4px; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
